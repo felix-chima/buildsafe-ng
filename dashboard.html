@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Platform Dashboard — BuildSafe NG · Trust, Verified.</title>
+<meta name="description" content="The BuildSafe NG platform dashboard: compliance status centre-stage, fixed navigation, alerts in your eye-line." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/buildsafe-mark.png" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<div class="dash">
+  <!-- LEFT NAV RAIL (fixed) -->
+  <aside class="dash__rail">
+    <a href="index.html" class="brand"><span class="brand__mark"><img src="assets/buildsafe-mark.png" alt="BuildSafe NG" /></span><span>BuildSafe NG<small>Trust, Verified</small></span></a>
+    <nav class="dash__nav">
+      <a href="#" class="active"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="13" y="3" width="8" height="5" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="13" y="10" width="8" height="11" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="3" y="13" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.7"/></svg> Dashboard</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-5h6v5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Projects</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M8.5 11l1.8 1.8L14 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Inspections</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3h7l5 5v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 3v5h5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg> Documents</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 14l3-4 3 3 4-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Reports</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H8l-5 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg> Disputes</a>
+    </nav>
+    <div class="dash__profile">
+      <span class="av">AO</span>
+      <div><strong>Ada Okafor</strong><span>Regulator · LASBCA</span></div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="dash__main">
+    <!-- TOP STATUS BAR -->
+    <div class="dash__top">
+      <div class="dash__select"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Lekki Phase 1 — Tower B <svg viewBox="0 0 24 24" fill="none" style="width:14px"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="dash__search"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg> Search projects, inspections, documents…</div>
+      <div class="dash__topright">
+        <button class="icon-btn"><span class="badge"></span><svg viewBox="0 0 24 24" fill="none"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 21a2 2 0 004 0" stroke="currentColor" stroke-width="1.7"/></svg></button>
+        <a href="index.html" class="icon-btn" title="Sign out"><svg viewBox="0 0 24 24" fill="none"><path d="M15 12H4M9 7l-5 5 5 5M15 4h4a1 1 0 011 1v14a1 1 0 01-1 1h-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="dash__body">
+      <div class="dash__head">
+        <div>
+          <h1>Compliance overview</h1>
+          <p>What's approved is what gets built — verified at every stage.</p>
+        </div>
+        <span class="pill pill--verified"><span class="pulse"></span> Live · synced 2 min ago</span>
+      </div>
+
+      <!-- KPIs -->
+      <div class="kpis">
+        <div class="kpi">
+          <div class="kpi__top"><span class="kpi__ic green"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 12.5l2.2 2.2 4.3-4.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="kpi__delta up">+1.4%</span></div>
+          <div class="kpi__num">99.2%</div><div class="kpi__label">As-approved compliance</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi__top"><span class="kpi__ic navy"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="kpi__delta up">+12</span></div>
+          <div class="kpi__num" data-count="340">0</div><div class="kpi__label">Projects monitored</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi__top"><span class="kpi__ic amber"><svg viewBox="0 0 24 24" fill="none"><path d="M12 9v4M12 17h.01M10.3 3.9l-8 14A2 2 0 004 21h16a2 2 0 001.7-3l-8-14a2 2 0 00-3.4 0z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><span class="kpi__delta down">2 new</span></div>
+          <div class="kpi__num">3</div><div class="kpi__label">Open deviation flags</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi__top"><span class="kpi__ic green"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span><span class="kpi__delta up">+248</span></div>
+          <div class="kpi__num" data-count="12480">0</div><div class="kpi__label">Inspections verified</div>
+        </div>
+      </div>
+
+      <!-- SPLIT: centre stage + right rail -->
+      <div class="dash__split">
+        <!-- centre stage -->
+        <div class="panel">
+          <div class="panel__head"><h3>Live site &amp; stage compliance</h3><span class="pill pill--verified"><span class="pulse"></span> Verified</span></div>
+          <div class="map-stage">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=70" alt="Geo-tagged live construction site" loading="lazy" />
+            <span class="live"><span class="pulse"></span> Live feed</span>
+            <span class="geo-tag"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.4 7-11a7 7 0 10-14 0c0 4.6 7 11 7 11z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.7"/></svg> 6.4528°N, 3.4626°E · 14:32 WAT</span>
+          </div>
+          <div class="stage-track">
+            <div class="stagebar"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="nm">Foundation</span><span class="pct" style="color:var(--green)">100% · Verified</span></div>
+            <div class="stagebar"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="nm">Substructure</span><span class="pct" style="color:var(--green)">100% · Verified</span></div>
+            <div class="stagebar"><span class="ic active"><svg viewBox="0 0 24 24" fill="none"><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/></svg></span><span class="nm">Superstructure</span><span class="pct">62% · In review</span></div>
+            <div class="stagebar"><span class="ic pending"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/></svg></span><span class="nm">Finishing</span><span class="pct">Pending</span></div>
+            <div class="stagebar"><span class="ic pending"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/></svg></span><span class="nm">Handover</span><span class="pct">Pending</span></div>
+          </div>
+        </div>
+
+        <!-- right rail: alerts -->
+        <div class="panel">
+          <div class="panel__head"><h3>Alerts &amp; escalations</h3><span class="pill" style="font-size:12px;padding:5px 11px;color:var(--red);background:var(--red-soft);border-color:transparent">3 open</span></div>
+          <div class="alerts">
+            <div class="alert red">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 9v4M12 17h.01M10.3 3.9l-8 14A2 2 0 004 21h16a2 2 0 001.7-3l-8-14a2 2 0 00-3.4 0z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+              <div><strong>Deviation flagged</strong><span>Column spacing on Level 4 differs from approved plan.</span><time>12 min ago · Tower B</time></div>
+            </div>
+            <div class="alert amber">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+              <div><strong>Verification due</strong><span>Superstructure stage evidence awaiting review.</span><time>1 hr ago · Tower B</time></div>
+            </div>
+            <div class="alert amber">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3h7l5 5v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+              <div><strong>Document expiring</strong><span>Structural approval renewal due in 14 days.</span><time>Today · Lekki Phase 1</time></div>
+            </div>
+          </div>
+          <a href="#" class="btn btn--navy btn--sm" style="width:100%;margin-top:18px">Open dispute resolution
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- bottom drawer: audit trail -->
+      <div class="panel" style="margin-top:20px">
+        <div class="panel__head"><h3>Immutable audit trail</h3><span class="pill pill--verified"><svg viewBox="0 0 24 24" fill="none" style="width:13px"><rect x="4" y="10" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.7"/></svg> Encrypted</span></div>
+        <div class="stage-track">
+          <div class="stagebar"><span class="ic" style="width:26px;height:26px"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="nm">Substructure verified by A. Okafor</span><span class="pct" style="font-weight:500;color:var(--text-3)">Today 14:32</span></div>
+          <div class="stagebar"><span class="ic" style="width:26px;height:26px"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="nm">Geo-tagged evidence uploaded · 18 photos</span><span class="pct" style="font-weight:500;color:var(--text-3)">Today 11:08</span></div>
+          <div class="stagebar"><span class="ic" style="width:26px;height:26px"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="nm">Foundation sign-off · matched to approval</span><span class="pct" style="font-weight:500;color:var(--text-3)">Yesterday</span></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
