@@ -158,6 +158,24 @@
     });
   });
 
+  /* ---------- Theme toggle (light / dark) ---------- */
+  var root = document.documentElement;
+  function getTheme() {
+    try { return localStorage.getItem('bsng-theme') || 'light'; }
+    catch (e) { return 'light'; }
+  }
+  function setTheme(t) {
+    root.setAttribute('data-theme', t);
+    try { localStorage.setItem('bsng-theme', t); } catch (e) {}
+  }
+  // pre-paint inline script normally sets this; ensure it's present as a fallback
+  if (!root.getAttribute('data-theme')) setTheme(getTheme());
+  document.querySelectorAll('.theme-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+  });
+
   /* ---------- Footer year ---------- */
   var yr = document.getElementById('year');
   if (yr) yr.textContent = new Date().getFullYear();

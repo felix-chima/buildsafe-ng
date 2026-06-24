@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BuildSafe NG — Packet 7 Advertising Campaign</title>
+  <meta name="description" content="BuildSafe NG Packet 7 advertising campaign with screenshot-ready print, radio, TV, billboard, specialty and social media designs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/buildsafe-mark.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .hero-panel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:40px}
+    .hero-stat{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:24px;text-align:center}
+    .hero-stat strong{display:block;font-size:32px;color:var(--text);margin-bottom:6px}
+    .hero-stat span{color:var(--text-2);font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+    .section-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .section-grid .card{min-height:0}
+    .note-heading{font-size:13px;font-family:var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:10px}
+    .brand-ack{color:var(--text-2);margin-top:16px;font-size:15px;max-width:760px;margin-left:auto;margin-right:auto}
+
+    /* ---------- screenshot-ready deliverable wrapper ---------- */
+    .deliverable{margin:38px auto 0;display:flex;flex-direction:column;align-items:center;gap:16px}
+    .deliverable__tag{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--green);border:1px dashed var(--green-line);border-radius:999px;padding:8px 18px}
+    .deliverable__hint{color:var(--text-3);font-size:12.5px;font-family:var(--mono);letter-spacing:.04em}
+    .artboard{position:relative;border-radius:10px;overflow:hidden;box-shadow:0 40px 90px -28px rgba(0,0,0,.75)}
+
+    /* shield helpers */
+    .bs-shield{display:inline-block}
+
+    /* ---------- A · PRINT AD (2 col x 6 inch newsprint) ---------- */
+    .ad-news{width:min(92vw,420px);aspect-ratio:322/600;background:#fbfaf5;color:#0b1f3a;
+      font-family:'Inter',sans-serif;display:flex;flex-direction:column;padding:30px 28px;border:1px solid #d9d4c5}
+    .ad-news__kicker{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:#0a7d4e;display:flex;align-items:center;gap:8px;border-bottom:2px solid #0b1f3a;padding-bottom:12px}
+    .ad-news__head{font-family:'Playfair Display',serif;font-weight:900;font-size:34px;line-height:1.02;letter-spacing:-.01em;margin:20px 0 0}
+    .ad-news__head em{color:#0a7d4e;font-style:italic}
+    .ad-news__sub{font-size:13px;line-height:1.6;color:#3a4658;margin-top:14px}
+    .ad-news__skyline{margin-top:18px}
+    .ad-news__proof{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto}
+    .ad-news__proof div{border-top:1px solid #cfc9b8;padding-top:8px}
+    .ad-news__proof b{display:block;font-family:'Space Grotesk',sans-serif;font-size:21px;color:#0b1f3a;line-height:1}
+    .ad-news__proof span{font-size:10px;letter-spacing:.04em;color:#5a6678;text-transform:uppercase}
+    .ad-news__cta{margin-top:16px;background:#0b1f3a;color:#fff;text-align:center;border-radius:8px;padding:12px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px}
+    .ad-news__cta small{display:block;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:10px;letter-spacing:.12em;color:#9fe7c6;margin-top:4px;text-transform:uppercase}
+    .ad-news__foot{display:flex;align-items:center;gap:10px;margin-top:14px}
+    .ad-news__foot .nm{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px}
+    .ad-news__foot .nm small{display:block;font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.18em;color:#0a7d4e;text-transform:uppercase}
+    .ad-news__contact{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.06em;color:#5a6678;margin-left:auto;text-align:right;line-height:1.6}
+
+    /* ---------- B · RADIO script sheet ---------- */
+    .radio-card{width:min(94vw,720px);background:#0A1322;border:1px solid var(--border);color:var(--text);font-family:'Inter',sans-serif}
+    .radio-card__top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 26px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,rgba(21,224,138,.06),transparent)}
+    .radio-card__top h4{font-family:'Space Grotesk',sans-serif;font-size:18px;margin:0}
+    .radio-card__top .meta{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--green);text-transform:uppercase}
+    .wave{display:flex;align-items:center;gap:2px;height:54px;padding:14px 26px;background:rgba(255,255,255,.02)}
+    .wave span{flex:1;background:linear-gradient(180deg,var(--green),var(--green-2));border-radius:2px;opacity:.85}
+    .radio-script{padding:8px 26px 24px}
+    .radio-line{display:grid;grid-template-columns:64px 70px 1fr;gap:14px;align-items:start;padding:13px 0;border-bottom:1px solid var(--border-2)}
+    .radio-line:last-child{border-bottom:0}
+    .radio-line .tc{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--green)}
+    .radio-line .who{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-3);letter-spacing:.08em}
+    .radio-line .txt{font-size:14.5px;line-height:1.6;color:var(--text)}
+    .radio-line .txt.sfx{color:var(--text-2);font-style:italic}
+
+    /* ---------- C · TV storyboard ---------- */
+    .tv-board{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;width:min(96vw,940px)}
+    .tv-frame{background:#0A1322;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+    .tv-frame__img{aspect-ratio:16/9;position:relative;background:linear-gradient(160deg,#0b1f3a,#060B16);display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .tv-frame__no{position:absolute;top:8px;left:10px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--green);z-index:3}
+    .tv-frame__cap{padding:11px 13px;font-size:12.5px;line-height:1.5;color:var(--text-2)}
+    .tv-frame__cap b{color:var(--text);font-weight:600}
+
+    /* ---------- D · BILLBOARD ---------- */
+    .billboard{width:min(96vw,960px);aspect-ratio:16/5;background:radial-gradient(120% 160% at 80% -20%,#12305a,#0b1f3a 45%,#060B16);color:#fff;display:flex;align-items:center;gap:40px;padding:0 56px;position:relative;border:1px solid rgba(255,255,255,.08)}
+    .billboard__txt{flex:1}
+    .billboard__brand{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:10px}
+    .billboard__head{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(34px,6vw,72px);line-height:.98;letter-spacing:-.02em;margin:14px 0}
+    .billboard__head .g{color:var(--green)}
+    .billboard__sub{font-size:clamp(13px,1.8vw,18px);color:#bcd0ea}
+    .billboard__qr{display:flex;flex-direction:column;align-items:center;gap:10px}
+    .billboard__qr small{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:#bcd0ea}
+
+    /* ---------- E · NOTEBOOK ---------- */
+    .notebook{width:min(86vw,360px);aspect-ratio:3/4;border-radius:6px 14px 14px 6px;position:relative;
+      background:linear-gradient(125deg,#0d2342,#0b1f3a 55%,#081729);
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,.06), inset 14px 0 24px -16px rgba(0,0,0,.8);
+      display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;color:#fff;padding:40px}
+    .notebook::before{content:"";position:absolute;left:14px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,transparent,rgba(255,255,255,.12),transparent)}
+    .gold{background:linear-gradient(120deg,#caa14a,#f7e7a8 45%,#b8862f);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+    .notebook__brand{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;letter-spacing:.01em;text-align:center}
+    .notebook__tag{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.28em;text-transform:uppercase}
+    .notebook__rule{width:54px;height:2px;border-radius:2px;background:linear-gradient(90deg,#caa14a,#f7e7a8,#b8862f)}
+    .notebook__foot{position:absolute;bottom:26px;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.16em;color:rgba(255,255,255,.45);text-transform:uppercase}
+
+    /* ---------- F · SOCIAL posts ---------- */
+    .ig-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;width:min(96vw,940px)}
+    .ig-post{aspect-ratio:4/5;border-radius:14px;overflow:hidden;position:relative;background:radial-gradient(120% 90% at 100% 0%,#12305a,#0b1f3a 50%,#060B16);color:#fff;display:flex;flex-direction:column;padding:24px;border:1px solid rgba(255,255,255,.08)}
+    .ig-post__top{display:flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;color:var(--green);text-transform:uppercase}
+    .ig-post__big{font-family:'Space Grotesk',sans-serif;font-weight:700;line-height:1;margin-top:auto}
+    .ig-post__num{font-size:clamp(40px,9vw,64px);letter-spacing:-.03em}
+    .ig-post__num .g{color:var(--green)}
+    .ig-post__cap{font-size:15px;line-height:1.45;color:#dbe6f5;margin-top:12px}
+    .ig-post__cta{margin-top:16px;display:inline-flex;align-items:center;gap:8px;align-self:flex-start;background:var(--green);color:#04130C;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;padding:9px 14px;border-radius:999px}
+    .ig-post__url{position:absolute;bottom:18px;right:20px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.08em;color:rgba(255,255,255,.55)}
+    .ig-caption{width:min(96vw,940px);margin:18px auto 0}
+    .ig-caption .card{margin-top:0}
+    .ig-caption h5{font-family:'Space Grotesk',sans-serif;font-size:15px;margin:0 0 6px}
+    .ig-caption p{font-size:13.5px;line-height:1.6}
+    .ig-caption .tags{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--green);margin-top:8px;line-height:1.7}
+
+    .campaign-matrix{width:100%;border-collapse:collapse;margin-top:24px}
+    .campaign-matrix th,.campaign-matrix td{border:1px solid rgba(255,255,255,.08);padding:14px;text-align:left;font-size:14px;color:var(--text-2)}
+    .campaign-matrix th{color:var(--text);background:rgba(255,255,255,.03);font-weight:600}
+
+    .sign-row{display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:760px;margin:30px auto 0}
+    .sign-row div{border-top:1px solid var(--border);padding-top:10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--text-3);text-transform:uppercase}
+
+    @media(max-width:860px){
+      .section-grid{grid-template-columns:1fr}
+      .tv-board,.ig-wrap{grid-template-columns:1fr 1fr}
+      .billboard{padding:0 28px;gap:20px}
+      .sign-row{grid-template-columns:1fr;gap:28px}
+    }
+    @media(max-width:560px){.tv-board,.ig-wrap{grid-template-columns:1fr}}
+  </style>
+  <script>(function(){try{var t=localStorage.getItem('bsng-theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+</head>
+<body>
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand" aria-label="BuildSafe NG home">
+      <span class="brand__mark"><img src="assets/buildsafe-mark.png" alt="BuildSafe NG" /></span>
+      <span>BuildSafe NG<small>Trust, Verified</small></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="about.html">About</a>
+      <a href="packet7.html" class="active">Packet 7</a>
+      <a href="demo.html">Demo</a>
+    </nav>
+    <div class="nav__cta">
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme"><svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+      <a href="login.html" class="btn btn--ghost btn--sm">Log In</a>
+      <a href="demo.html" class="btn btn--primary btn--sm">Request a Demo</a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="section section--tight">
+  <div class="container">
+    <div class="center head-wrap">
+      <span class="eyebrow c">Packet 7 Advertising Campaign</span>
+      <h1 class="section-title center">BuildSafe NG Advertising Plan</h1>
+      <p class="section-lead center">A complete campaign aligned to the Packet 6 BuildSafe NG identity. Every deliverable below is rendered as a finished, screenshot-ready design — print, radio, TV, billboard, specialty item and social — using the approved BuildSafe NG logo, palette, typography and institutional tone.</p>
+      <div style="margin:22px auto 0;display:flex;justify-content:center;gap:12px;flex-wrap:wrap">
+        <a href="Packet7.pdf" class="btn btn--ghost btn--sm" download>Download Packet 7 PDF</a>
+      </div>
+    </div>
+
+    <div class="hero-panel">
+      <div class="hero-stat"><strong>6</strong><span>Finished designs</span></div>
+      <div class="hero-stat"><strong>4</strong><span>Channels</span></div>
+      <div class="hero-stat"><strong>1</strong><span>Core campaign idea</span></div>
+    </div>
+    <p class="brand-ack">Each artboard below is built to be captured directly from this page. Screenshot the framed design under each section and submit the image with the matching label (Advertising Print Ad, Billboard, etc.).</p>
+  </div>
+</main>
+
+<!-- ============ A · PRINT AD ============ -->
+<section id="section-a" class="section">
+  <div class="container">
+    <div class="center head-wrap">
+      <span class="eyebrow c">A · Print Ad</span>
+      <h2 class="section-title center">Your building got approved. Prove it stayed that way.</h2>
+      <p class="section-lead center">A 2-column × 6-inch newspaper ad for The Punch, Guardian Nigeria and BusinessDay — built for developers, legal teams and institutional decision-makers who still trust print for credibility.</p>
+    </div>
+
+    <div class="deliverable">
+      <span class="deliverable__tag">Deliverable A — Advertising Print Ad · 2 col × 6 in</span>
+      <div class="artboard">
+        <div class="ad-news">
+          <div class="ad-news__kicker">
+            <svg class="bs-shield" width="14" height="16" viewBox="0 0 48 56" aria-hidden="true"><path d="M24 2 44 10v18c0 13-8.5 22-20 26C12.5 50 4 41 4 28V10z" fill="#0b1f3a"/><path d="M16 28l6 6 12-13" fill="none" stroke="#0a7d4e" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            BuildSafe NG · Compliance, Verified
+          </div>
+          <h1 class="ad-news__head">Your building got approved.<br><em>Prove it stayed that way.</em></h1>
+          <p class="ad-news__sub">A permit says it was approved. It doesn't prove it was built that way. BuildSafe NG records every stage — real-time, geotagged, immutable — from foundation to sign-off.</p>
+
+          <div class="ad-news__skyline">
+            <svg width="100%" height="78" viewBox="0 0 320 78" preserveAspectRatio="none" aria-hidden="true">
+              <rect x="0" y="62" width="320" height="2" fill="#0b1f3a"/>
+              <g fill="#0b1f3a" opacity=".9">
+                <rect x="12" y="34" width="26" height="28"/><rect x="44" y="20" width="22" height="42"/>
+                <rect x="72" y="42" width="20" height="20"/><rect x="98" y="12" width="26" height="50"/>
+                <rect x="130" y="30" width="22" height="32"/><rect x="158" y="24" width="18" height="38"/>
+                <rect x="182" y="8" width="28" height="54"/><rect x="216" y="36" width="20" height="26"/>
+                <rect x="242" y="22" width="24" height="40"/><rect x="272" y="40" width="18" height="22"/>
+                <rect x="294" y="28" width="18" height="34"/>
+              </g>
+              <g fill="#0a7d4e"><circle cx="111" cy="12" r="4"/><circle cx="196" cy="8" r="4"/><circle cx="254" cy="22" r="4"/></g>
+            </svg>
+          </div>
+
+          <div class="ad-news__proof">
+            <div><b>12,400+</b><span>Verified inspections</span></div>
+            <div><b>9</b><span>Aligned agencies</span></div>
+            <div><b>99.2%</b><span>Compliance rate</span></div>
+            <div><b>0</b><span>Demolition orders</span></div>
+          </div>
+
+          <div class="ad-news__cta">Request a Compliance Demo Today<small>buildsafeng.com/demo</small></div>
+
+          <div class="ad-news__foot">
+            <svg class="bs-shield" width="26" height="30" viewBox="0 0 48 56" aria-hidden="true"><path d="M24 2 44 10v18c0 13-8.5 22-20 26C12.5 50 4 41 4 28V10z" fill="#0b1f3a"/><path d="M16 28l6 6 12-13" fill="none" stroke="#0a7d4e" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div class="nm">BuildSafe NG<small>Trust, Verified</small></div>
+            <div class="ad-news__contact">buildsafeng.com<br>info@buildsafeng.com<br>+234 (0) 800 BUILD NG</div>
+          </div>
+        </div>
+      </div>
+      <span class="deliverable__hint">Screenshot the framed ad → save as “Advertising Print Ad”.</span>
+    </div>
+
+    <div class="section-grid" style="margin-top:40px">
+      <div class="card">
+        <div class="note-heading">Why it works</div>
+        <p>It speaks to the real pain point: developers don't need another compliance system — they need proof that what was approved was actually built. Four hard proof points make the claim concrete.</p>
+      </div>
+      <div class="card">
+        <div class="note-heading">Placement & tone</div>
+        <p>Property, business and construction sections of national newspapers. Navy authority, editorial layout, restrained green accent — institutional trust, not mass-market buzz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ B · RADIO ============ -->
+<section id="section-b" class="section section--tight">
+  <div class="container">
+    <div class="center head-wrap">
+      <span class="eyebrow c">B · Radio</span>
+      <h2 class="section-title center">The Voice That Stops a Developer in Traffic</h2>
+      <p class="section-lead center">A 30-second drive-time script for Smooth FM, Cool FM and Inspiration FM — sober, urgent and grounded in real construction risk. Record this script as your MP3 deliverable.</p>
+    </div>
+
+    <div class="deliverable">
+      <span class="deliverable__tag">Deliverable B — Radio Script · 0:30</span>
+      <div class="artboard">
+        <div class="radio-card">
+          <div class="radio-card__top">
+            <h4>BuildSafe NG — “Most of them had permits” · 30s Radio Spot</h4>
+            <span class="meta">RUNTIME 0:30 · MONO · 1× V/O</span>
+          </div>
+          <div class="wave">
+            <span style="height:24%"></span><span style="height:62%"></span><span style="height:40%"></span><span style="height:88%"></span><span style="height:54%"></span><span style="height:30%"></span><span style="height:70%"></span><span style="height:46%"></span><span style="height:92%"></span><span style="height:34%"></span><span style="height:60%"></span><span style="height:78%"></span><span style="height:28%"></span><span style="height:50%"></span><span style="height:84%"></span><span style="height:38%"></span><span style="height:66%"></span><span style="height:44%"></span><span style="height:96%"></span><span style="height:32%"></span><span style="height:58%"></span><span style="height:72%"></span><span style="height:26%"></span><span style="height:48%"></span><span style="height:80%"></span><span style="height:36%"></span><span style="height:64%"></span><span style="height:42%"></span><span style="height:90%"></span><span style="height:30%"></span><span style="height:56%"></span><span style="height:74%"></span><span style="height:22%"></span><span style="height:52%"></span><span style="height:86%"></span><span style="height:40%"></span>
+          </div>
+          <div class="radio-script">
+            <div class="radio-line"><div class="tc">0:00</div><div class="who">SFX</div><div class="txt sfx">Busy construction site — drilling, voices — then an abrupt, total silence.</div></div>
+            <div class="radio-line"><div class="tc">0:03</div><div class="who">V/O</div><div class="txt">“In Lagos, a building collapses every month. Most of them had permits. Most had engineers. None of them had proof.”</div></div>
+            <div class="radio-line"><div class="tc">0:12</div><div class="who">SFX</div><div class="txt sfx">A single, clean BuildSafe notification chime.</div></div>
+            <div class="radio-line"><div class="tc">0:13</div><div class="who">V/O</div><div class="txt">“BuildSafe NG tracks every stage of your construction in real time. Geotagged. Government-aligned. An immutable record — from groundbreaking to sign-off.”</div></div>
+            <div class="radio-line"><div class="tc">0:24</div><div class="who">V/O</div><div class="txt">“When the regulator comes, you won't be hoping. You'll be ready.”</div></div>
+            <div class="radio-line"><div class="tc">0:28</div><div class="who">V/O</div><div class="txt"><strong>“BuildSafe NG. Trust, Verified. Visit buildsafeng.com.”</strong></div></div>
+          </div>
+        </div>
+      </div>
+      <span class="deliverable__hint">Read the script aloud to confirm ~30s, then record as “Radio Announcement.mp3”.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ C · TV ============ -->
+<section id="section-c" class="section">
+  <div class="container">
+    <div class="center head-wrap">
+      <span class="eyebrow c">C · TV Commercial</span>
+      <h2 class="section-title center">Approved. Built. Proven.</h2>
+      <p class="section-lead center">A 45-second documentary-real concept for Channels TV, TVC News and Arise News. Use this storyboard to shoot and edit your MP4 deliverable.</p>
+    </div>
+
+    <div class="deliverable">
+      <span class="deliverable__tag">Deliverable C — TV Storyboard · 0:45</span>
+      <div class="tv-board">
+        <div class="tv-frame">
+          <div class="tv-frame__img"><span class="tv-frame__no">01 · 0:00</span>
+            <svg width="100%" height="100%" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="160" height="90" fill="#0b1f3a"/><g fill="#1a3a64"><rect x="14" y="44" width="16" height="38"/><rect x="34" y="30" width="14" height="52"/><rect x="52" y="50" width="12" height="32"/><rect x="68" y="22" width="18" height="60"/><rect x="90" y="40" width="14" height="42"/><rect x="108" y="34" width="16" height="48"/><rect x="128" y="48" width="14" height="34"/></g><rect x="0" y="82" width="160" height="8" fill="#081627"/></svg>
+          </div>
+          <div class="tv-frame__cap"><b>Wide:</b> Lagos skyline at dusk, then a troubled construction site.</div>
+        </div>
+        <div class="tv-frame">
+          <div class="tv-frame__img"><span class="tv-frame__no">02 · 0:07</span>
+            <svg width="100%" height="100%" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="160" height="90" fill="#0e2746"/><circle cx="80" cy="38" r="20" fill="#1a3a64"/><rect x="58" y="58" width="44" height="32" rx="8" fill="#1a3a64"/></svg>
+          </div>
+          <div class="tv-frame__cap"><b>Developer:</b> “My permit was approved. My building was not.”</div>
+        </div>
+        <div class="tv-frame">
+          <div class="tv-frame__img"><span class="tv-frame__no">03 · 0:15</span>
+            <svg width="100%" height="100%" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="160" height="90" fill="#060B16"/><rect x="18" y="16" width="124" height="58" rx="6" fill="#0b1f3a" stroke="#15E08A" stroke-width="1"/><rect x="26" y="24" width="50" height="6" rx="3" fill="#15E08A"/><rect x="26" y="36" width="108" height="4" rx="2" fill="#1a3a64"/><rect x="26" y="46" width="108" height="4" rx="2" fill="#1a3a64"/><rect x="26" y="56" width="70" height="4" rx="2" fill="#1a3a64"/><circle cx="120" cy="58" r="9" fill="none" stroke="#15E08A" stroke-width="2"/><path d="M116 58l3 3 6-6" fill="none" stroke="#15E08A" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="tv-frame__cap"><b>UI:</b> BuildSafe NG dashboard reveals geotagged inspections.</div>
+        </div>
+        <div class="tv-frame">
+          <div class="tv-frame__img"><span class="tv-frame__no">04 · 0:24</span>
+            <svg width="100%" height="100%" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="160" height="90" fill="#0e2746"/><path d="M80 26c10 0 18 8 18 18 0 13-18 28-18 28S62 57 62 44c0-10 8-18 18-18z" fill="#15E08A"/><circle cx="80" cy="43" r="7" fill="#0b1f3a"/></svg>
+          </div>
+          <div class="tv-frame__cap"><b>Field:</b> Inspector uploads a verified stage; dashboard updates live.</div>
+        </div>
+        <div class="tv-frame">
+          <div class="tv-frame__img"><span class="tv-frame__no">05 · 0:33</span>
+            <svg width="100%" height="100%" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="160" height="90" fill="#0b1f3a"/><rect x="0" y="0" width="53" height="90" fill="#0e2746"/><rect x="107" y="0" width="53" height="90" fill="#0e2746"/><g fill="#1a3a64"><circle cx="26" cy="38" r="13"/><rect x="12" y="54" width="28" height="24" rx="6"/><circle cx="80" cy="38" r="13"/><rect x="66" y="54" width="28" height="24" rx="6"/><circle cx="134" cy="38" r="13"/><rect x="120" y="54" width="28" height="24" rx="6"/></g></svg>
+          </div>
+          <div class="tv-frame__cap"><b>Split:</b> Developer, regulator and diaspora investor — all see the same record.</div>
+        </div>
+        <div class="tv-frame">
+          <div class="tv-frame__img"><span class="tv-frame__no">06 · 0:40</span>
+            <svg width="100%" height="100%" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="160" height="90" fill="#060B16"/><path d="M80 22 98 30v15c0 11-7 18.5-18 22-11-3.5-18-11-18-22V30z" fill="#0b1f3a" stroke="#15E08A" stroke-width="1.5"/><path d="M72 46l5 5 11-12" fill="none" stroke="#15E08A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="tv-frame__cap"><b>End card:</b> Shield logo, navy. “Trust, Verified.” · buildsafeng.com</div>
+        </div>
+      </div>
+      <span class="deliverable__hint">Shoot to these six beats, edit in CapCut/iMovie → export “TV Commercial.mp4”.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ D · BILLBOARD ============ -->
+<section id="section-d" class="section section--tight">
+  <div class="container">
+    <div class="center head-wrap">
+      <span class="eyebrow c">D · Billboard</span>
+      <h2 class="section-title center">Seven Words That Stop at 55km/h</h2>
+      <p class="section-lead center">Outdoor creative for the Third Mainland Bridge and Ozumba Mbadiwe corridor — minimal, bold and readable from a distance.</p>
+    </div>
+
+    <div class="deliverable">
+      <span class="deliverable__tag">Deliverable D — Billboard</span>
+      <div class="artboard">
+        <div class="billboard">
+          <div class="billboard__txt">
+            <div class="billboard__brand">
+              <svg class="bs-shield" width="20" height="24" viewBox="0 0 48 56" aria-hidden="true"><path d="M24 2 44 10v18c0 13-8.5 22-20 26C12.5 50 4 41 4 28V10z" fill="none" stroke="#15E08A" stroke-width="3"/><path d="M16 28l6 6 12-13" fill="none" stroke="#15E08A" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              BuildSafe NG · Trust, Verified
+            </div>
+            <h2 class="billboard__head">Approved. Built. <span class="g">Proven.</span></h2>
+            <p class="billboard__sub">Real-time, geotagged, immutable construction compliance.</p>
+          </div>
+          <div class="billboard__qr">
+            <svg width="118" height="118" viewBox="0 0 118 118" aria-hidden="true">
+              <rect width="118" height="118" rx="8" fill="#fff"/>
+              <g fill="#0b1f3a">
+                <!-- finder TL -->
+                <rect x="10" y="10" width="28" height="28"/><rect x="16" y="16" width="16" height="16" fill="#fff"/><rect x="20" y="20" width="8" height="8"/>
+                <!-- finder TR -->
+                <rect x="80" y="10" width="28" height="28"/><rect x="86" y="16" width="16" height="16" fill="#fff"/><rect x="90" y="20" width="8" height="8"/>
+                <!-- finder BL -->
+                <rect x="10" y="80" width="28" height="28"/><rect x="16" y="86" width="16" height="16" fill="#fff"/><rect x="20" y="90" width="8" height="8"/>
+                <!-- data modules -->
+                <rect x="46" y="10" width="6" height="6"/><rect x="58" y="10" width="6" height="6"/><rect x="64" y="16" width="6" height="6"/><rect x="46" y="22" width="6" height="6"/><rect x="70" y="22" width="6" height="6"/>
+                <rect x="10" y="46" width="6" height="6"/><rect x="22" y="46" width="6" height="6"/><rect x="34" y="46" width="6" height="6"/><rect x="46" y="46" width="6" height="6"/><rect x="58" y="46" width="6" height="6"/><rect x="70" y="46" width="6" height="6"/><rect x="82" y="46" width="6" height="6"/><rect x="100" y="46" width="6" height="6"/>
+                <rect x="16" y="58" width="6" height="6"/><rect x="40" y="58" width="6" height="6"/><rect x="52" y="58" width="6" height="6"/><rect x="64" y="58" width="6" height="6"/><rect x="88" y="58" width="6" height="6"/>
+                <rect x="46" y="70" width="6" height="6"/><rect x="58" y="70" width="6" height="6"/><rect x="76" y="70" width="6" height="6"/><rect x="100" y="70" width="6" height="6"/>
+                <rect x="52" y="82" width="6" height="6"/><rect x="70" y="82" width="6" height="6"/><rect x="88" y="82" width="6" height="6"/><rect x="100" y="82" width="6" height="6"/>
+                <rect x="46" y="94" width="6" height="6"/><rect x="64" y="94" width="6" height="6"/><rect x="82" y="94" width="6" height="6"/><rect x="94" y="100" width="6" height="6"/>
+              </g>
+            </svg>
+            <small>SCAN · buildsafeng.com</small>
+          </div>
+        </div>
+      </div>
+      <span class="deliverable__hint">Screenshot the billboard → save as “Billboard”.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ E · SPECIALTY ITEM ============ -->
+<section id="section-e" class="section">
+  <div class="container">
+    <div class="center head-wrap">
+      <span class="eyebrow c">E · Specialty Item</span>
+      <h2 class="section-title center">The Compliance Founder's Notebook</h2>
+      <p class="section-lead center">A premium opening-day giveaway for government visits and enterprise meetings — a hardbound A5 notebook with a gold-foil BuildSafe NG shield.</p>
+    </div>
+
+    <div class="deliverable">
+      <span class="deliverable__tag">Deliverable E — Specialty Item Mockup</span>
+      <div class="artboard" style="box-shadow:none">
+        <div class="notebook">
+          <svg width="78" height="92" viewBox="0 0 48 56" aria-hidden="true">
+            <defs><linearGradient id="goldg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#caa14a"/><stop offset=".45" stop-color="#f7e7a8"/><stop offset="1" stop-color="#b8862f"/></linearGradient></defs>
+            <path d="M24 2 44 10v18c0 13-8.5 22-20 26C12.5 50 4 41 4 28V10z" fill="none" stroke="url(#goldg)" stroke-width="2.5"/>
+            <path d="M16 28l6 6 12-13" fill="none" stroke="url(#goldg)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="notebook__brand gold">BuildSafe NG</div>
+          <div class="notebook__rule"></div>
+          <div class="notebook__tag gold">Trust, Verified</div>
+          <div class="notebook__foot">The most important structure you build is your record</div>
+        </div>
+      </div>
+      <span class="deliverable__hint">Navy faux-leather A5 · gold-foil shield · lined, watermarked interior · ₦3,500–₦5,000/unit.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ F · SOCIAL ============ -->
+<section id="section-f" class="section section--tight">
+  <div class="container">
+    <div class="center head-wrap">
+      <span class="eyebrow c">F · Social Media</span>
+      <h2 class="section-title center">The Feed That Earns Trust Before the Sales Call</h2>
+      <p class="section-lead center">A three-post launch package for Instagram, LinkedIn and X. Each post leads with evidence, not adjectives — and carries the same visual system as the print, radio, TV and billboard work.</p>
+    </div>
+
+    <div class="deliverable">
+      <span class="deliverable__tag">Deliverable F — Social Posts (×3)</span>
+      <div class="ig-wrap">
+        <div class="ig-post">
+          <div class="ig-post__top">
+            <svg width="13" height="15" viewBox="0 0 48 56" aria-hidden="true"><path d="M24 2 44 10v18c0 13-8.5 22-20 26C12.5 50 4 41 4 28V10z" fill="none" stroke="#15E08A" stroke-width="3"/><path d="M16 28l6 6 12-13" fill="none" stroke="#15E08A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            BuildSafe NG
+          </div>
+          <div class="ig-post__big ig-post__num"><span class="g">₦0</span><br>demolition<br>orders.</div>
+          <div class="ig-post__cap">On every BuildSafe NG project. Proof of compliance is the only credible claim in construction.</div>
+          <span class="ig-post__cta">Request a compliance demo →</span>
+          <div class="ig-post__url">buildsafeng.com</div>
+        </div>
+        <div class="ig-post">
+          <div class="ig-post__top">
+            <svg width="13" height="15" viewBox="0 0 48 56" aria-hidden="true"><path d="M24 2 44 10v18c0 13-8.5 22-20 26C12.5 50 4 41 4 28V10z" fill="none" stroke="#15E08A" stroke-width="3"/><path d="M16 28l6 6 12-13" fill="none" stroke="#15E08A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            BuildSafe NG
+          </div>
+          <div class="ig-post__big" style="font-size:clamp(26px,5.4vw,38px);line-height:1.05">A diaspora investor asks:<br><span style="color:var(--green)">“Can you prove it?”</span></div>
+          <div class="ig-post__cap">Nice photos aren't proof. Give remote investors a verifiable, geotagged construction record.</div>
+          <span class="ig-post__cta">Diaspora assurance →</span>
+          <div class="ig-post__url">buildsafeng.com/diaspora</div>
+        </div>
+        <div class="ig-post">
+          <div class="ig-post__top">
+            <svg width="13" height="15" viewBox="0 0 48 56" aria-hidden="true"><path d="M24 2 44 10v18c0 13-8.5 22-20 26C12.5 50 4 41 4 28V10z" fill="none" stroke="#15E08A" stroke-width="3"/><path d="M16 28l6 6 12-13" fill="none" stroke="#15E08A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            BuildSafe NG
+          </div>
+          <div class="ig-post__big ig-post__num"><span class="g">99.2%</span></div>
+          <div class="ig-post__cap" style="margin-top:6px"><strong style="color:#fff">compliance health</strong> across 286 active projects. Measurable outcomes, not vague promises.</div>
+          <span class="ig-post__cta">See how it works →</span>
+          <div class="ig-post__url">buildsafeng.com/demo</div>
+        </div>
+      </div>
+      <span class="deliverable__hint">Screenshot each post (4:5) → save as “Social Post 1/2/3”.</span>
+
+      <div class="ig-caption">
+        <div class="section-grid">
+          <div class="card">
+            <h5>Post 1 — Caption</h5>
+            <p>Zero demolition orders. Every BuildSafe NG project carries an immutable, geotagged compliance record — so the building that's approved is the building that gets built. That's the difference between a permit and proof.</p>
+            <div class="tags">#BuildSafeNG #TrustVerified #NigeriaConstruction #LagosBuilding #ComplianceTech #GovTech</div>
+          </div>
+          <div class="card">
+            <h5>Post 2 — Caption</h5>
+            <p>Building from abroad? You shouldn't have to trust a photo. BuildSafe NG gives diaspora investors a live, verifiable record of every construction stage — so “Can you prove it?” always has an answer.</p>
+            <div class="tags">#DiasporaInvestors #NigeriaRealEstate #BuildSafeNG #TrustVerified #RealEstateNigeria</div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:24px">
+          <h5>Post 3 — Caption</h5>
+          <p>99.2% compliance health across 286 active projects. BuildSafe NG turns building regulation into measurable, defensible data — from groundbreaking to sign-off. See the dashboard the regulators trust.</p>
+          <div class="tags">#BuildSafeNG #ConstructionCompliance #NigeriaGovTech #BuildingRegulation #TrustVerified</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:36px;">
+      <div class="note-heading">Campaign coherence — one argument across every platform</div>
+      <p>Every format makes the same core claim: <strong>compliance is not a document, it is verifiable proof.</strong> The same shield logo, navy-and-green palette, Space Grotesk headlines and “Trust, Verified.” sign-off carry from the newspaper page to the radio chime, the TV end card, the billboard and the feed. The line “Approved. Built. Proven.” anchors the TV, billboard and print work, while the proof points (₦0 demolition orders, 99.2% compliance, geotagged inspections) repeat across social — so a viewer who hears the radio spot, then sees the billboard, then meets a post, receives one consistent message reinforced from four directions. That repetition is what builds brand recall and trust before the sales call.</p>
+      <table class="campaign-matrix">
+        <thead>
+          <tr><th>Format</th><th>Core message</th><th>Visual tone</th><th>CTA</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Print</td><td>Permits ≠ Proof</td><td>Navy, editorial, modest green</td><td>Request Demo</td></tr>
+          <tr><td>Radio</td><td>You will be ready</td><td>Sober, authoritative</td><td>Visit buildsafeng.com</td></tr>
+          <tr><td>TV</td><td>Approved. Built. Proven.</td><td>Documentary, premium</td><td>Visit buildsafeng.com</td></tr>
+          <tr><td>Billboard</td><td>Approved. Built. Proven.</td><td>Minimal, bold</td><td>Scan / Visit</td></tr>
+          <tr><td>Notebook</td><td>Professional trust</td><td>Premium, institutional</td><td>Ongoing visibility</td></tr>
+          <tr><td>Social</td><td>Proof first</td><td>Evidence-led, data-focused</td><td>Demo request</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer class="section section--tight">
+  <div class="container center">
+    <p class="eyebrow c">BuildSafe NG · Advertising Business Plan</p>
+    <p class="section-lead">Group 1 · Team Packet #7 · buildsafeng.com · careers@buildsafeng.com · +234 (0) 800 BUILD NG</p>
+    <div class="sign-row">
+      <div>Team Signature</div>
+      <div>Mentor / Coach Signature</div>
+    </div>
+    <p class="brand-ack" style="margin-top:28px">All campaign materials are aligned with the BuildSafe NG brand system established in Packets 1–6. Each artboard above is prepared to be screenshotted and submitted as the corresponding labelled deliverable.</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
