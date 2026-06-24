@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blog — BuildSafe NG · Trust, Verified.</title>
+<meta name="description" content="Stories from Nigeria's building-collapse crisis — and why verifiable, evidence-based construction compliance matters. The BuildSafe NG blog." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/buildsafe-mark.png" />
+<link rel="stylesheet" href="css/styles.css" />
+  <script>(function(){try{var t=localStorage.getItem('bsng-theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<style>
+  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+  .post{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+  .post:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(10,22,43,.14)}
+  .post__media{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--surface-2)}
+  .post__media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+  .post:hover .post__media img{transform:scale(1.05)}
+  .post__tag{position:absolute;top:14px;left:14px;font:600 11.5px/1 'Space Grotesk',sans-serif;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:rgba(10,22,43,.6);backdrop-filter:blur(6px);padding:7px 11px;border-radius:999px}
+  .post__body{padding:22px 22px 26px;display:flex;flex-direction:column;flex:1}
+  .post__meta{font:600 12.5px/1 'Space Grotesk',sans-serif;color:var(--text-3);letter-spacing:.02em;margin-bottom:12px}
+  .post__body h3{font-size:21px;line-height:1.25;letter-spacing:-.02em;margin:0 0 10px}
+  .post__body p{font-size:15px;line-height:1.65;color:var(--text-2);margin:0 0 18px}
+  .post__more{margin-top:auto;font:600 14px/1 'Inter',sans-serif;color:var(--green);display:inline-flex;align-items:center;gap:7px}
+  .post__more svg{width:16px;height:16px}
+  @media (max-width:1000px){.blog-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:640px){.blog-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand"><span class="brand__mark"><img src="assets/buildsafe-mark.png" alt="BuildSafe NG" /></span><span>BuildSafe NG<small>Trust, Verified</small></span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="solutions.html">Solutions</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="about.html">About</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="#">Contact us</a>
+    </nav>
+    <div class="nav__cta">
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme"><svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+      <a href="login.html" class="btn btn--ghost btn--sm">Log In</a>
+      <a href="demo.html" class="btn btn--primary btn--sm">Request a Demo</a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu">
+  <a href="solutions.html">Solutions</a><a href="how-it-works.html">How it works</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="#">Contact us</a><a href="login.html">Log In</a><a href="demo.html" class="btn btn--primary">Request a Demo</a>
+</div>
+
+<!-- PAGE HEAD -->
+<section class="page-head">
+  <span class="glow glow--green"></span>
+  <div class="page-head__bg"></div>
+  <div class="container">
+    <div class="crumbs"><a href="index.html">Home</a><span>/</span>Blog</div>
+    <h1>When buildings <span class="green-text">fall.</span></h1>
+    <p>Nigeria loses lives to preventable collapses every year. These are the stories behind the rubble — and the case for verifying what gets built, at every stage.</p>
+  </div>
+</section>
+
+<!-- POSTS -->
+<section class="section">
+  <div class="container">
+    <div class="blog-grid reveal">
+
+      <!-- Post 1 -->
+      <article class="post">
+        <a href="#" class="post__media" aria-label="Read story">
+          <span class="post__tag">Lagos · Ikoyi</span>
+          <img src="https://images.unsplash.com/photo-1590725140246-20acdee442be?w=900&q=70&auto=format&fit=crop" alt="Collapsed high-rise building reduced to rubble" loading="lazy" />
+        </a>
+        <div class="post__body">
+          <div class="post__meta">Nov 1, 2021 · 6 min read</div>
+          <h3>The 21-storey that never should have stood</h3>
+          <p>A luxury high-rise on Gerrard Road pancaked during construction, killing more than 40 workers. Approvals said 15 floors. Six extra storeys were going up anyway — and no one with authority was watching the gap.</p>
+          <span class="post__more">Read the story
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="post">
+        <a href="#" class="post__media" aria-label="Read story">
+          <span class="post__tag">Lagos · Ita-Faaji</span>
+          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&q=70&auto=format&fit=crop" alt="Rescue workers searching a collapsed structure" loading="lazy" />
+        </a>
+        <div class="post__body">
+          <div class="post__meta">Mar 13, 2019 · 5 min read</div>
+          <h3>A school on a condemned floor</h3>
+          <p>An ageing three-storey building in Lagos Island held a classroom on its top floor. It had been marked for demolition. When it came down, children were inside. The warning existed — it just lived in a file nobody could enforce.</p>
+          <span class="post__more">Read the story
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="post">
+        <a href="#" class="post__media" aria-label="Read story">
+          <span class="post__tag">The fix</span>
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=70&auto=format&fit=crop" alt="Engineer inspecting an active construction site" loading="lazy" />
+        </a>
+        <div class="post__body">
+          <div class="post__meta">Jun 24, 2026 · 4 min read</div>
+          <h3>What verifiable construction looks like</h3>
+          <p>Most collapses share one pattern: what was approved and what was built drifted apart, with no proof in between. Geo-tagged, stage-by-stage verification closes that gap — turning every milestone into evidence anyone can check.</p>
+          <span class="post__more">Read the story
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <span class="glow glow--green"></span>
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <a href="index.html" class="brand"><span class="brand__mark"><img src="assets/buildsafe-mark.png" alt="BuildSafe NG" /></span><span>BuildSafe NG<small>Trust, Verified</small></span></a>
+        <p class="footer__about">Construction-compliance and governance infrastructure for Nigeria. We make credibility visible — from the first pixel to the final handshake.</p>
+        <div class="footer__social"><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4 0 4.75 2.6 4.75 6V21h-4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg></a><a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4 4 0 00-6.9 3.7A11.4 11.4 0 013 4.8a4 4 0 001.2 5.4c-.6 0-1.2-.2-1.8-.5a4 4 0 003.2 4 4 4 0 01-1.8.1 4 4 0 003.7 2.8A8 8 0 012 18.6 11.3 11.3 0 008.1 20c7.3 0 11.4-6.1 11.4-11.4v-.5c.8-.6 1.5-1.3 2-2.2z"/></svg></a></div>
+      </div>
+      <div class="footer__col"><h5>Platform</h5><a href="how-it-works.html">How it works</a><a href="dashboard.html">Dashboard</a><a href="login.html">Log in</a><a href="demo.html">Request a demo</a></div>
+      <div class="footer__col"><h5>Solutions</h5><a href="solutions.html#developers">For developers</a><a href="solutions.html#government">For government</a><a href="solutions.html#investors">For diaspora investors</a></div>
+      <div class="footer__col"><h5>Company</h5><a href="about.html">About us</a><a href="blog.html">Blog</a><a href="#">Contact us</a></div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year">2026</span> BuildSafe NG. All rights reserved.</p>
+      <span class="badge-trust"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 12.5l2.2 2.2 4.3-4.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Trust, Verified.</span>
+      <div class="links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Security</a></div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
